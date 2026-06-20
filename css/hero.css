@@ -5,7 +5,8 @@
   align-items: center;
   text-align: center;
   
-  height:50vh;
+  padding: 2rem 1rem;
+  min-height:50vh;
   gap:1rem;
 
 }
@@ -15,6 +16,12 @@
   line-height:1.2;
 }
 
+#Hero img{
+  width:100%;
+  max-width:400px;
+  animation: movimento 4s infinite;
+}
+
 #Hero h1 strong{
   color:#fd16fc;
 }
@@ -22,12 +29,27 @@
 #Hero p{
   font-size: 1.5rem;
   max-width:400px;
+  }
+  
+@keyframes movimento{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
-
-
-@media (max-width:480px){
-  #Hero{
-    padding: 1rem;
+  
+@media(max-width:680px){
+    #Hero{
+    padding:2rem 1rem;
+  }
+  #Hero img{
+    max-width:150px;
+    width:100%;
   }
   #Hero h1{
     font-size: 2rem;

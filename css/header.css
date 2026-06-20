@@ -9,11 +9,6 @@
   scroll-behavior: smooth;
 }
 
-html,
-body{
-  overflow-x:hidden;
-}
-
 :root{
 --preto--:#1A1A1A;
 --rosa--: #fd16fc;
@@ -52,7 +47,8 @@ header nav ul{
   border:2px solid gray;
   background-color:#1A1A1A;
   padding: 0.5rem;
-  min-width:450px;
+  flex-wrap: wrap;
+  min-width: 0;
   min-height: 40px;
   border-radius:2rem;
 }

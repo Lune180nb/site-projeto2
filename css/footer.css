@@ -55,7 +55,7 @@ footer .footer-content .social-links .bi-facebook:hover{
   transition:color 0.5s ease;
 }
 
-@media(max-width:480px){
+@media(max-width:680px){
   footer{
     padding: 2rem 1rem;
   }

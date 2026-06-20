@@ -110,7 +110,7 @@
 }
 
 /* Responsividade para celulares pequenos */
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   #Diferenciais {
     padding: 3rem 1rem;
   }

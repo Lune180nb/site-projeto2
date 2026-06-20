@@ -50,6 +50,10 @@
   text-align: center;
 }
 
+#Contato .contato-container .horario-info ul{
+  list-style: none;
+}
+
 #Contato .contato-container .contato-info:hover,#Contato .contato-container .horario-info:hover{
   transform: translateY(-10px);
   box-shadow: 0px 8px 10px var(--rosa--);
@@ -60,7 +64,7 @@
   color:var(--rosa--);
 }
 
-@media (max-width:480px){
+@media (max-width:680px){
   #Contato{
     padding:1rem;
   }
