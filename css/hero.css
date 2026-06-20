@@ -1,0 +1,42 @@
+#Hero{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+  height:50vh;
+  gap:1rem;
+
+}
+
+#Hero h1{
+  font-size:4rem;
+  line-height:1.2;
+}
+
+#Hero h1 strong{
+  color:#fd16fc;
+}
+
+#Hero p{
+  font-size: 1.5rem;
+  max-width:400px;
+}
+
+
+@media (max-width:480px){
+  #Hero{
+    padding: 1rem;
+  }
+  #Hero h1{
+    font-size: 2rem;
+  }
+  #Hero p{
+    font-size: 1rem;
+  }
+}
+
+
+
+

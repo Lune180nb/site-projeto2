@@ -1,0 +1,87 @@
+
+#Contato{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  min-height:40vh;
+}
+
+#Contato .contato-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width:100%;
+  gap:2rem;
+}
+
+#Contato h3{
+  font-size:3.2rem;
+  color:var(--rosa--);
+  position:relative;
+  margin-bottom:4rem;
+}
+
+#Contato h3::after{
+  content:" ";
+  position: absolute;
+  border:2px solid var(--rosa--);
+  transform: translateX(14%);
+  width:70%;
+  bottom:0;
+  left:0;
+}
+
+#Contato .contato-container .contato-info,#Contato .contato-container .horario-info{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  
+  min-height:300px;
+  width:300px;
+  
+  padding: 4rem;
+  background-color:var(--preto--);
+  color:var(--branco--);
+  border-radius: 2rem;
+  text-align: center;
+}
+
+#Contato .contato-container .contato-info:hover,#Contato .contato-container .horario-info:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 10px var(--rosa--);
+  transition:all 1s ease;
+}
+
+#Contato .contato-container .contato-info:hover h2,#Contato .contato-container .horario-info:hover h2{
+  color:var(--rosa--);
+}
+
+@media (max-width:480px){
+  #Contato{
+    padding:1rem;
+  }
+  
+  #Contato h3{
+    margin-top:2rem;
+    font-size: 2rem;
+  }
+  
+  #Contato .contato-container{
+  flex-direction: column;
+  gap:1.5rem;
+}
+#Contato .contato-container .contato-info,#Contato .contato-container .horario-info{
+  width:90%;
+  max-width: 300px;
+  padding:2rem;
+}
+}
+
+
+
+
+

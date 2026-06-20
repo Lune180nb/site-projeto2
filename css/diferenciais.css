@@ -1,0 +1,129 @@
+#Diferenciais {
+  padding: 5rem 2rem;
+  background-color: var(--bege--);
+  display: flex;
+  justify-content: center;
+}
+
+.container-diferenciais {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-header span {
+  display: block;
+  color: var(--rosa--);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: var(--preto--);
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: var(--rosa--);
+  border-radius: 2px;
+}
+
+.cards-diferenciais {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card-item {
+  background-color: var(--branco--);
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-item:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: rgba(253, 22, 252, 0.1);
+}
+
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background-color: var(--bege--);
+  border-radius: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  transition: all 0.4s ease;
+}
+
+.card-item:hover .icon-wrapper {
+  background-color: var(--rosa--);
+  transform: rotate(10deg);
+}
+
+.icon-wrapper i {
+  font-size: 2.5rem;
+  color: var(--rosa--);
+  transition: all 0.4s ease;
+}
+
+.card-item:hover .icon-wrapper i {
+  color: var(--branco--);
+}
+
+.card-item h3 {
+  font-size: 1.5rem;
+  color: var(--preto--);
+  margin-bottom: 1rem;
+}
+
+.card-item p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+  #Diferenciais {
+    padding: 3rem 1rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2rem;
+  }
+  
+  .section-header span{
+    display: none;
+  }
+
+  .card-item {
+    padding: 2rem 1.5rem;
+  }
+}
