@@ -9,6 +9,10 @@
   scroll-behavior: smooth;
 }
 
+html{
+scroll-padding-top:120px;
+}
+
 :root{
 --preto--:#1A1A1A;
 --rosa--: #fd16fc;
